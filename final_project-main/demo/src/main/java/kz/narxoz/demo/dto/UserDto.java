@@ -1,0 +1,15 @@
+package kz.narxoz.demo.dto;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class UserDto {
+    private Long id;
+    private String nameDto;
+    private String emailDto;
+}
