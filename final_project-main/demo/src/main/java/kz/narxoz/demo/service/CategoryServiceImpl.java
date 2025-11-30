@@ -40,7 +40,7 @@ public class CategoryServiceImpl implements CategoryService {
         CategoryEntity category = categoryRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Category not found with id: " + id));
 
-        // Обновляем только нужные поля
+        
         category.setName(categoryDto.getNameDto());
 
         return categoryMapper.toDto(categoryRepository.save(category));
