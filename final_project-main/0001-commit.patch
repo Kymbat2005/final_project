@@ -1,0 +1,25 @@
+From 539ef73b0ac410dca2758466c849491cdf27c678 Mon Sep 17 00:00:00 2001
+From: kymbat <kymbatzhenis.2005@gmail.com>
+Date: Sun, 30 Nov 2025 18:34:14 +0500
+Subject: [PATCH] commit
+
+---
+ .../main/java/kz/narxoz/demo/service/CategoryServiceImpl.java   | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/final_project-main/demo/src/main/java/kz/narxoz/demo/service/CategoryServiceImpl.java b/final_project-main/demo/src/main/java/kz/narxoz/demo/service/CategoryServiceImpl.java
+index 7d0aad2..8d10823 100644
+--- a/final_project-main/demo/src/main/java/kz/narxoz/demo/service/CategoryServiceImpl.java
++++ b/final_project-main/demo/src/main/java/kz/narxoz/demo/service/CategoryServiceImpl.java
+@@ -40,7 +40,7 @@ public class CategoryServiceImpl implements CategoryService {
+         CategoryEntity category = categoryRepository.findById(id)
+                 .orElseThrow(() -> new RuntimeException("Category not found with id: " + id));
+ 
+-        // Обновляем только нужные поля
++        
+         category.setName(categoryDto.getNameDto());
+ 
+         return categoryMapper.toDto(categoryRepository.save(category));
+-- 
+2.45.1.windows.1
+
