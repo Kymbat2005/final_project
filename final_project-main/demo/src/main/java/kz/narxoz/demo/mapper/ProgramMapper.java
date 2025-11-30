@@ -18,5 +18,6 @@ public interface ProgramMapper {
     @Mapping(target = "description", source = "descriptionDto")
     ProgramEntity toEntity(ProgramDto programDto);
 
+
     List<ProgramDto> toDtoList(List<ProgramEntity> programs);
 }

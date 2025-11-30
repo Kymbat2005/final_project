@@ -17,6 +17,7 @@ import java.util.List;
 @NoArgsConstructor
 @Table(name = "t_program")
 public class ProgramEntity {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "t_id")

@@ -31,6 +31,8 @@ public class UserApi {
         userService.updateUser(id, userDto);
         return new ResponseEntity<>(HttpStatus.OK);
     }
+
+
     @DeleteMapping("/{id}")
     public ResponseEntity<?> delete(@PathVariable(name = "id") Long id){
         userService.deleteUser(id);

@@ -18,5 +18,6 @@ public interface UserMapper {
     @Mapping(target = "email",source = "emailDto")
     User toEntity(UserDto userDto);
 
+
     List<UserDto> toDtoList(List<User> user);
 }

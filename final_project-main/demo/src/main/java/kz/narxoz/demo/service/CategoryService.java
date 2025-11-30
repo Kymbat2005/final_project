@@ -2,7 +2,6 @@ package kz.narxoz.demo.service;
 
 
 import kz.narxoz.demo.dto.CategoryDto;
-
 import java.util.List;
 
 public interface CategoryService {

@@ -6,6 +6,7 @@ import kz.narxoz.demo.dto.ProgramDto;
 import java.util.List;
 
 public interface ProgramService {
+
     List<ProgramDto> getall();
     ProgramDto getById(Long id);
     ProgramDto addProgram(ProgramDto programDto);

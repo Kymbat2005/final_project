@@ -30,7 +30,6 @@ public class UserServiceImpl implements UserService {
         User user= userRepository.save(userMapper.toEntity(userDto));
         return userMapper.toDto(user);
     }
-
     @Override
     public UserDto updateUser(Long id, UserDto userDto) {
         User user = userRepository.findById(id).orElse(null);

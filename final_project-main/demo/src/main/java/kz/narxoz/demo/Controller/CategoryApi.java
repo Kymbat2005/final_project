@@ -27,6 +27,7 @@ public class CategoryApi {
     @PostMapping
     public ResponseEntity<?> add(@RequestBody CategoryDto categoryDto){
         categoryService.addCategory(categoryDto);
+
         return new ResponseEntity<>(HttpStatus.OK);
     }
 

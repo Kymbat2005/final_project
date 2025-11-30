@@ -21,7 +21,6 @@ public class ProgramApi {
     public ResponseEntity<?> getById(@PathVariable(name = "id") Long id){
         return new ResponseEntity<>(programService.getById(id), HttpStatus.OK);
     }
-
     @PostMapping
     public ResponseEntity<?> addProgram(@RequestBody ProgramDto programDto){
         programService.addProgram(programDto);
