@@ -34,6 +34,22 @@ public class UserMapperTest {
         Assertions.assertEquals(userEntity.getEmail(),userDto.getEmailDto());
     }
     @Test
+    void convertDtoToEntityTest() {
+        UserDto userDto = new UserDto(1L, "kymbat", "kymbat@gmail.com");
+
+        User userEntity = userMapper.toEntity(userDto);
+
+        Assertions.assertNotNull(userEntity);
+        Assertions.assertNotNull(userEntity.getId());
+        Assertions.assertNotNull(userEntity.getName());
+        Assertions.assertNotNull(userEntity.getEmail());
+
+        Assertions.assertEquals(userDto.getId(), userEntity.getId());
+        Assertions.assertEquals(userDto.getNameDto(), userEntity.getName());
+        Assertions.assertEquals(userDto.getEmailDto(), userEntity.getEmail());
+    }
+
+    @Test
     void convertEntityListToDtoListTest(){
         List<User> userEntityList=new ArrayList<>();
         userEntityList.add(new User(1L,"kymbat","kymbat@gmail.com"));

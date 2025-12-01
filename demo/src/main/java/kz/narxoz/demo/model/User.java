@@ -24,15 +24,15 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "t_gym")
+@Table(name = "t_user")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "gym_id")
+    @Column(name = "user_id")
     private Long id;
     @Column(name="t_name")
     private String name;
-    @Column(name="t_city")
+    @Column(name="t_email")
     private String email;
 
 }
