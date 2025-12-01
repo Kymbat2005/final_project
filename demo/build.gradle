@@ -43,7 +43,7 @@ tasks.named('test') {
 flyway {
     url = 'jdbc:postgresql://localhost:5432/postgres'
     user = 'postgres'
-    password = 'postgres'
+    password = '123'
     locations = ['classpath:db/migration']
     baselineOnMigrate = true
 }

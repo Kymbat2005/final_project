@@ -33,9 +33,9 @@ public class Program {
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
-            name = "program_gym",
+            name = "program_user",
             joinColumns = @JoinColumn(name = "program_id"),
-            inverseJoinColumns = @JoinColumn(name = "gym_id")
+            inverseJoinColumns = @JoinColumn(name = "user_id")
     )
     private List<User> users;
 
