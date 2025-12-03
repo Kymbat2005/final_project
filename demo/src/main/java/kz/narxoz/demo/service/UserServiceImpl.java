@@ -1,7 +1,6 @@
 package kz.narxoz.demo.service;
 
 
-import kz.narxoz.demo.UserRepository;
 import kz.narxoz.demo.dto.UserDto;
 import kz.narxoz.demo.mapper.UserMapper;
 import kz.narxoz.demo.model.User;

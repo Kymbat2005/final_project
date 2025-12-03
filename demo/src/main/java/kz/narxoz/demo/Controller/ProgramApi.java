@@ -15,7 +15,7 @@ public class ProgramApi {
     private final ProgramService programService;
     @GetMapping
     public ResponseEntity<?> getAll(){
-        return new ResponseEntity<>(programService.getall(), HttpStatus.OK);
+        return new ResponseEntity<>(programService.getAll(), HttpStatus.OK);
     }
     @GetMapping("/{id}")
     public ResponseEntity<?> getById(@PathVariable(name = "id") Long id){
@@ -30,7 +30,7 @@ public class ProgramApi {
 
     @PutMapping("/{id}")
     public ResponseEntity<?> updateProgram(@PathVariable(name = "id") Long id, @RequestBody ProgramDto programDto){
-        programService.update(id, programDto);
+        programService.updateProgram(id, programDto);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
